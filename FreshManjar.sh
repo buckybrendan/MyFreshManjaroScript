@@ -1,3 +1,4 @@
+sudo pacman -Rcns manjaro-hello manjaro-welcome
 sudo pacman-mirrors --fasttrack
 sudo pacman -Syyu
 sudo sed --in-place "s/#EnableAUR/EnableAUR/" "/etc/pamac.conf
