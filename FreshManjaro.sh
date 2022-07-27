@@ -13,6 +13,7 @@ cat /proc/sys/vm/swappiness
 sudo echo "vm.swappiness=20" > /etc/sysctl.d/100-manjaro.conf
 curl -O https://gitlab.com/cscs/maxperfwiz/raw/master/maxperfwiz
 chmod +x maxperfwiz
+/home/brendan/maxperfwiz
 mhwd-kernel -l
 mhwd-kernel -li
 sudo pacman -Syyuu
