@@ -10,10 +10,10 @@ sudo nvidia-xconfig --cool-bits=24
 sudo pamac build protontricks-git discord_arch_electron runescape-launcher bottles goverlay-bin protonup-qt
 ln -s /home/brendan/.local/share/bottles/runners/ /home/brendan/.local/share/lutris/runners/wine
 cat /proc/sys/vm/swappiness
-sudo echo "vm.swappiness=20" > /etc/sysctl.d/100-manjaro.conf
 curl -O https://gitlab.com/cscs/maxperfwiz/raw/master/maxperfwiz
 chmod +x maxperfwiz
-/home/brendan/maxperfwiz
+'/home/brendan/maxperfwiz'
+sudo sysctl vm.swappiness=10
 mhwd-kernel -l
 mhwd-kernel -li
 sudo pacman -Syyuu
